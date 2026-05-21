@@ -1,6 +1,6 @@
 # 🚗 Garage Management System
 
-![Home Page Dashboard](screenshots/home.jpeg)
+![Home Page Dashboard](screenshots/img3.jpeg)
 
 A comprehensive Full-Stack Web Application designed to streamline garage and auto-repair shop operations. Built with a modern **Angular** frontend and a robust **Spring Boot (Java)** backend, this system allows shop owners to easily manage customers, vehicles, mechanics, service requests, inventory, and invoices all in one sleek dashboard.
 
