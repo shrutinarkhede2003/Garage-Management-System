@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.angular/
+target/
+.mvn/
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.class
+*.jar
+*.war
+out/

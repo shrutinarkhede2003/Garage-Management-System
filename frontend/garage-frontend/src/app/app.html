@@ -1,0 +1,26 @@
+<nav class="glass-nav animate-slide-down" *ngIf="showNav">
+  <a routerLink="/home" class="nav-brand">🛠️ GarageSystem</a>
+  <div class="nav-links">
+    <a routerLink="/home" routerLinkActive="active" class="nav-link">🏠 Home</a>
+    <a routerLink="/customers" routerLinkActive="active" class="nav-link">👥 Customers</a>
+    <a routerLink="/vehicles" routerLinkActive="active" class="nav-link">🚗 Vehicles</a>
+    <a routerLink="/repairs" routerLinkActive="active" class="nav-link">🔧 Repairs</a>
+    <a routerLink="/mechanics" routerLinkActive="active" class="nav-link">👨‍🔧 Mechanics</a>
+    <a routerLink="/inventory" routerLinkActive="active" class="nav-link">📦 Inventory</a>
+    <a routerLink="/invoices" routerLinkActive="active" class="nav-link">🧾 Invoices</a>
+    <div class="user-profile" style="display: flex; align-items: center; gap: 1rem; margin-left: 2rem; padding-left: 2rem; border-left: 1px solid rgba(255,255,255,0.2);">
+      <div style="width: 40px; height: 40px; border-radius: 50%; background-color: #d9f99d; color: var(--bg-color); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; text-transform: uppercase;">
+        {{ userInitial }}
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <span style="font-weight: 700; font-size: 0.95rem; color: #fff; text-transform: capitalize;">{{ currentUser }}</span>
+        <span style="font-size: 0.8rem; color: rgba(255,255,255,0.7);">Garage Admin</span>
+      </div>
+      <button (click)="logout()" class="btn btn-primary" style="margin-left: 1rem; background-color: #ffffff; color: var(--bg-color) !important; padding: 0.5rem 1.5rem; font-size: 0.9rem;">Logout</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container animate-slide-up" [ngStyle]="{'margin-top': showNav ? '0' : '2rem'}">
+  <router-outlet></router-outlet>
+</div>
